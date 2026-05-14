@@ -8,7 +8,7 @@
         <input type="text" placeholder="Name" [(ngModel)]="formData.firstname" name="firstname"
             (input)="onNameInput()" required />
         <div class="input-divider"></div>
-        <img src="assets/person-icon.png" alt="Person" class="input-icon" />
+        <img src="assets/icons/person-icon.png" alt="Person" class="input-icon" />
     </div>
 </div>
 
@@ -21,7 +21,7 @@
     <div class="input-wrapper" [class.error]="emailError">
         <input type="email" placeholder="Email" [(ngModel)]="formData.email" name="email" (input)="onEmailInput()"
             pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required />
-        <img src="assets/mail-icon.png" alt="Mail" class="input-icon" />
+        <img src="assets/icons/mail-icon.png" alt="Mail" class="input-icon" />
     </div>
 </div>
 
@@ -34,6 +34,6 @@
     <div class="input-wrapper" [class.error]="phoneError">
         <input type="tel" placeholder="Phone" [(ngModel)]="formData.phone" name="phone" (input)="onPhoneInput($event)"
             required />
-        <img src="assets/phone-icon.png" alt="Phone" class="input-icon" />
+        <img src="assets/icons/phone-icon.png" alt="Phone" class="input-icon" />
     </div>
 </div>

@@ -1,7 +1,7 @@
 <div class="signup-container">
     <div class="signup-card">
         <button type="button" class="back-btn" (click)="goBackToLogin()">
-            <img src="assets/responsive-back-button.png" alt="Back" class="back-icon" />
+            <img src="assets/responsive/responsive-back-button.png" alt="Back" class="back-icon" />
         </button>
 
         <h1>Sign up</h1>
@@ -11,7 +11,7 @@
             <div class="input-group" [class.has-error]="nameError">
                 <input type="text" [(ngModel)]="name" name="name" placeholder="Name" class="form-input"
                     [attr.data-error]="nameError" (input)="onNameInput()" />
-                <img src="assets/person-icon.png" alt="Name" class="input-icon" />
+                <img src="assets/icons/person-icon.png" alt="Name" class="input-icon" />
                 <div class="error-text">{{ nameError || '' }}</div>
             </div>
 

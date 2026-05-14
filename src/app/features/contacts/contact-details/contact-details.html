@@ -6,7 +6,7 @@
             <div class="mobile-divider"></div>
         </div>
         <button class="back-btn mobile-only" (click)="onBack()">
-            <img src="assets/responsive-back-button.png" alt="Back">
+            <img src="assets/responsive/responsive-back-button.png" alt="Back">
         </button>
 
         <div class="default-content">
@@ -27,11 +27,11 @@
                 <span class="details-name">{{ selectedContact!.firstname }} {{ selectedContact!.lastname }}</span>
                 <div class="details-actions desktop-only">
                     <button class="icon-btn edit-btn" (click)="onEdit()">
-                        <img src="assets/edit.png" alt="Edit" class="action-icon" />
+                        <img src="assets/icons/edit.png" alt="Edit" class="action-icon" />
                         Edit
                     </button>
                     <button class="icon-btn delete-btn" (click)="onDelete()">
-                        <img src="assets/delete.png" alt="Delete" class="action-icon" />
+                        <img src="assets/icons/delete.png" alt="Delete" class="action-icon" />
                         Delete
                     </button>
                 </div>
@@ -40,18 +40,18 @@
         <button class="mobile-edit-btn" 
         [class.active]="showMobileOptionsOverlay"
         (click)="toggleMobileOptions()">
-            <img src="assets/responsive-edit-button.png" alt="Edit contact">
+            <img src="assets/responsive/responsive-edit-button.png" alt="Edit contact">
         </button>
 
 @if (showMobileOptionsOverlay) {
 <div class="mobile-options-overlay" (click)="toggleMobileOptions()">
   <div class="mobile-options-menu" (click)="$event.stopPropagation()">
     <button class="option-btn edit-option" (click)="onEdit()">
-      <img src="assets/edit.png" alt="Edit" class="option-icon" />
+      <img src="assets/icons/edit.png" alt="Edit" class="option-icon" />
       <span>Edit</span>
     </button>
     <button class="option-btn delete-option" (click)="onDelete()">
-      <img src="assets/delete.png" alt="Delete" class="option-icon" />
+      <img src="assets/icons/delete.png" alt="Delete" class="option-icon" />
       <span>Delete</span>
     </button>
   </div>

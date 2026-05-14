@@ -217,9 +217,9 @@ export class ContactAssignmentDropdownComponent implements OnInit {
    */
   onArrowHover(imgElement: HTMLImageElement, isDropdownOpen: boolean) {
     if (isDropdownOpen) {
-      imgElement.src = 'assets/arrow-up-variant2.png';
+      imgElement.src = 'assets/icons/arrow-up-variant2.png';
     } else {
-      imgElement.src = 'assets/arrow-down-variant2.png';
+      imgElement.src = 'assets/icons/arrow-down-variant2.png';
     }
   }
 
